@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <main id="container">
+
+            <h1>Encriptador / Desencriptador</h1> 
+            <div class="wrapper">
+                <div class="vertical-container">
+
+                    <textarea class="textarea" id="txtSinEncriptar" type="textarea" cols="50" rows="25" name="texto" id="texto" placeholder="Texto a encriptar"></textarea>
+                    <button class="boton-copiar" onclick="fCopiarDesencriptado()">Copiar</button>
+                </div>
+                <div style="display: flex">
+                    <div class="button-container">
+
+                        <input class="button" onclick="fEncriptar()" type="submit" value="Encriptar">
+                        <input class="button" onclick="fDesencriptar()" type="submit" value="Desencriptar">
+
+                    </div>
+                </div>
+                <div class="vertical-container">
+
+                    <textarea class="textarea" id="txtEncriptado" type="textarea" cols="50" rows="25"  name="texto" id="texto" placeholder="Texto a desencriptar"></textarea>
+                    <button class="boton-copiar" onclick="fCopiarEncriptado()">Copiar</button>
+                
+                </div>
+
+            </div>
+            <script src="js/logica.js"></script>
+        </main>
+        <footer>
+            <p>&copy; 2024 Desarrollado por Cristóbal Chávez.</p>
+        </footer>
+    </body>
+</html>
